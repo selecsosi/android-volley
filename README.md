@@ -6,7 +6,7 @@ Standard volley library with some additional helpers that return a response mode
 Use exactly like volley, but include a different response listener
 
     new ResponseWithHeaders.Listener<MyPOJO>() {
-                @Override public void onResponse(ResponseModel<Transfer> response) {
+                @Override public void onResponse(ResponseModel<MyPOJO> response) {
                         // response.getData() with have your response object
                         // response.getHeaders() will return a Map<String, String> with your response headers
                     }
