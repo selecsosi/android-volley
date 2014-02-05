@@ -71,13 +71,13 @@ public class Response<T> {
     }
 
 
-    private Response(T result, Cache.Entry cacheEntry) {
+    protected Response(T result, Cache.Entry cacheEntry) {
         this.result = result;
         this.cacheEntry = cacheEntry;
         this.error = null;
     }
 
-    private Response(VolleyError error) {
+    protected Response(VolleyError error) {
         this.result = null;
         this.cacheEntry = null;
         this.error = error;
